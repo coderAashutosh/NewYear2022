@@ -4,9 +4,10 @@ let minutes_show = document.querySelector('#minutes');
 let seconds_show = document.querySelector('#seconds');
 let countdown = document.querySelector('#countdown');
 let title = document.querySelector('#title');
+let tittle = document.querySelector('#tittle');
 
 //set time
-let new_year_date = new Date('Jan 1, 2022 00:00:00').getTime();
+let new_year_date = new Date('Jan 1, 2021 00:00:00').getTime();
 
 //create a function (update)
 let timer = setInterval(update, 1000);
@@ -47,6 +48,7 @@ function update() {
         confetti.render();
         countdown.style.display = "none";
         title.innerHTML = "May this year bring peace and happiness in your life.😊";
+        tittle.innerHTML = 'Happy New Year!!'
     }
 
 }
