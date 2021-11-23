@@ -42,6 +42,9 @@ function update() {
     //function will run when time is done
     if (remaining_time <= 0) {
         clearInterval(timer);
+        var confettiSettings = { target: 'my-canvas' };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
         countdown.style.display = "none";
         title.innerHTML = "May this year bring peace and happiness in your life.😊";
     }

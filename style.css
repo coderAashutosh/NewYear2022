@@ -38,6 +38,7 @@
     letter-spacing: 4px;
     font-weight: 500;
     line-height: 4em;
+    text-shadow: 1px 2px#b267f8;
 }
 
 .container .countdownBox h2 span{
@@ -48,6 +49,7 @@
 .container .countdownBox h2 span i{
     font-style: initial;
     color: #b267f8;
+    text-shadow: 1px 2px #21053b;
 }
 
 .container .countdownBox .countdown{
@@ -58,6 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px #c892ff;
 }
 
 .container .countdownBox .countdown div{
@@ -69,6 +72,7 @@
     font-weight: 500;
     margin: 0 15px;
     margin-top: -20px;
+    text-shadow: 2px 2px#9937f5;
 }
 
 .container .countdownBox .countdown div::before{
@@ -97,7 +101,16 @@
 }
 .container .countdownBox .countdown div#seconds::before{
     content: 'seconds';
-    color: #ac5af8;
+    color: #d9bcf5;
+}
+
+#my-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99999;
 }
 
 /* Responsiveness */
