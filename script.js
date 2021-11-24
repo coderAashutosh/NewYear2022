@@ -46,8 +46,15 @@ function update() {
         var confettiSettings = { target: 'my-canvas' };
         var confetti = new ConfettiGenerator(confettiSettings);
         confetti.render();
+        $('.fireworks').fireworks({
+            sound: true, // sound effect
+            opacity: 0.6,
+            width: '100%',
+            height: '100%'
+        });
         countdown.style.display = "none";
         title.innerHTML = "May this year bring peace and happiness in your life.😊";
+        title.style.color = '#e6005c'
         tittle.innerHTML = 'Happy New Year!!'
     }
 
