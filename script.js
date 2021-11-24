@@ -7,7 +7,7 @@ let title = document.querySelector('#title');
 let tittle = document.querySelector('#tittle');
 
 //set time
-let new_year_date = new Date('Jan 1, 2022 00:00:00').getTime();
+let new_year_date = new Date('Jan 1, 2021 00:00:00').getTime();
 
 //create a function (update)
 let timer = setInterval(update, 1000);
